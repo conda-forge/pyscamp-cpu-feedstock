@@ -11,11 +11,12 @@ source:
   sha256: fbdacfbdbd51e319732eafc1ffee2ce0a5e893f9eb610f71ae67d503f3aba66a
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - cmake
     - make  # [not win]
