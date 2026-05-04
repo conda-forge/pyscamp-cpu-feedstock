@@ -1,6 +1,2 @@
-MACOSX_SDK_VERSION:  # [osx and x86_64]
- - "10.12"           # [osx and x86_64]
-c_compiler:          # [win]
- - vs2019            # [win]
-cxx_compiler:        # [win]
- - vs2019            # [win]
+# MACOSX_SDK_VERSION and vs2019 overrides removed - no longer needed after
+# SCAMP PR #136 fixes macOS arm64 and Windows MSVC compatibility.
