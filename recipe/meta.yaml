@@ -1,15 +1,15 @@
 {% set name = "pyscamp" %}
-{% set version = "4.0.2dev0" %}
+{% set version = "4.0.2.dev2" %}
 
 package:
   name: {{ name|lower }}-cpu
   version: {{ version }}
 
 source:
-  # Testing SCAMP PR #136 (fix/python-3.13-numpy-2-compat)
-  # Switch back to a PyPI url + sha256 once v4.0.2 is released.
-  git_url: https://github.com/zpzim/SCAMP
-  git_rev: 3d391097e5bfc9c362e31db0cecf7070a3965c00
+  # Testing SCAMP PR #137 against test.pypi.org pre-release sdist.
+  # Switch back to https://pypi.io/... once v4.0.2 is released.
+  url: https://test-files.pythonhosted.org/packages/60/54/88cd2781aaf9d0903fb43470e4f1cb0f1e3b94251c091a1b45bb8f98c585/pyscamp-{{ version }}.tar.gz
+  sha256: afe41406271786b40dd34369e812fcc6076c4f92d5f11e7894eb8028965ed786
 
 build:
   number: 0
