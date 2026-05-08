@@ -1,2 +1,0 @@
-# MACOSX_SDK_VERSION and vs2019 overrides removed - no longer needed after
-# SCAMP PR #136 fixes macOS arm64 and Windows MSVC compatibility.
