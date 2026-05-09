@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyscamp-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyscamp-{{ version }}.tar.gz
   sha256: 4ca16a26831d069efdb4054ca4d83fe4c0fc34f0d3b797a736391dfc4c9a11a0
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
