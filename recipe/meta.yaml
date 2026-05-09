@@ -1,15 +1,13 @@
 {% set name = "pyscamp" %}
-{% set version = "4.0.2.dev2" %}
+{% set version = "4.0.2" %}
 
 package:
   name: {{ name|lower }}-cpu
   version: {{ version }}
 
 source:
-  # Testing SCAMP PR #137 against test.pypi.org pre-release sdist.
-  # Switch back to https://pypi.io/... once v4.0.2 is released.
-  url: https://test-files.pythonhosted.org/packages/60/54/88cd2781aaf9d0903fb43470e4f1cb0f1e3b94251c091a1b45bb8f98c585/pyscamp-{{ version }}.tar.gz
-  sha256: afe41406271786b40dd34369e812fcc6076c4f92d5f11e7894eb8028965ed786
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyscamp-{{ version }}.tar.gz
+  sha256: 4ca16a26831d069efdb4054ca4d83fe4c0fc34f0d3b797a736391dfc4c9a11a0
 
 build:
   number: 0
