@@ -1,6 +1,5 @@
 {% set name = "pyscamp" %}
-{% set version = "4.0.1" %}
-
+{% set version = "4.0.2" %}
 
 package:
   name: {{ name|lower }}-cpu
@@ -8,22 +7,24 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyscamp-{{ version }}.tar.gz
-  sha256: fbdacfbdbd51e319732eafc1ffee2ce0a5e893f9eb610f71ae67d503f3aba66a
+  sha256: 4ca16a26831d069efdb4054ca4d83fe4c0fc34f0d3b797a736391dfc4c9a11a0
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake
     - make  # [not win]
 
   host:
     - python
+    - setuptools >=70
     - setuptools-scm
-    - pybind11 >=2.10
+    - pybind11 >=2.13.6
     - eigen 3.4.0
 
   run:
