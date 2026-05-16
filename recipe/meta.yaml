@@ -1,5 +1,5 @@
 {% set name = "pyscamp" %}
-{% set version = "4.0.2" %}
+{% set version = "4.0.3" %}
 
 package:
   name: {{ name|lower }}-cpu
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyscamp-{{ version }}.tar.gz
-  sha256: 4ca16a26831d069efdb4054ca4d83fe4c0fc34f0d3b797a736391dfc4c9a11a0
+  sha256: 4681d2e850e3dae40b4266d2b11737e077af49aa6c55d99fbccece170f8e68bc
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
